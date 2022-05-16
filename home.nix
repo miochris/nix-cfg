@@ -58,16 +58,16 @@ in
     enable = true;
     windowManager.i3 = rec {
       enable = true;
-      package = pkgs.i3-gaps;
+      package = pkgs.i3; # i3-gaps
       config = {
         modifier = "Mod4";
         # bars = [ ];
-        gaps = {
-          inner = 12;
-          outer = 5;
-          smartGaps = true;
-          smartBorders = "off";
-        };
+        # gaps = {
+        #   inner = 12;
+        #   outer = 5;
+        #   smartGaps = true;
+        #   smartBorders = "off";
+        # };
 
         startup = [
           #{ command = "exec firefox"; }
