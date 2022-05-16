@@ -6,7 +6,6 @@ let
 
  inherit (lib) mkIf;
  inherit (pkgs.stdenv) isLinux isDarwin;
- # polybar-pipewire = pkgs.callPackage ./nix/polybar.nix { };
 
 in
 {
